@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Widget hiển thị khi có lỗi tải dữ liệu, hỗ trợ nút "Thử lại" nếu lỗi có thể khắc phục.
 class ErrorRetryView extends StatelessWidget {
-  const ErrorRetryView({
-    super.key,
-    required this.message,
-    this.onRetry,
-  });
+  const ErrorRetryView({super.key, required this.message, this.onRetry});
 
   final String message;
   final VoidCallback? onRetry;
@@ -33,10 +29,7 @@ class ErrorRetryView extends StatelessWidget {
             ),
             if (onRetry != null) ...[
               const SizedBox(height: 16),
-              FilledButton(
-                onPressed: onRetry,
-                child: const Text('Thử lại'),
-              ),
+              FilledButton(onPressed: onRetry, child: const Text('Thử lại')),
             ],
           ],
         ),

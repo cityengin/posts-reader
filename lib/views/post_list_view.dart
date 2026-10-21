@@ -41,20 +41,18 @@ class _PostListViewState extends State<PostListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bài viết'),
-      ),
+      appBar: AppBar(title: const Text('Bài viết')),
       body: ListenableBuilder(
         listenable: _viewModel,
         builder: (context, _) {
           return switch (_viewModel.status) {
             LoadStatus.loading => const Center(
-                child: CircularProgressIndicator(),
-              ),
+              child: CircularProgressIndicator(),
+            ),
             LoadStatus.error => ErrorRetryView(
-                message: _viewModel.errorMessage ?? '',
-                onRetry: _viewModel.canRetry ? _viewModel.load : null,
-              ),
+              message: _viewModel.errorMessage ?? '',
+              onRetry: _viewModel.canRetry ? _viewModel.load : null,
+            ),
             LoadStatus.success => _buildList(context, _viewModel.posts),
           };
         },
@@ -69,14 +67,8 @@ class _PostListViewState extends State<PostListView> {
       itemBuilder: (context, index) {
         final post = posts[index];
         return ListTile(
-          leading: CircleAvatar(
-            child: Text('${post.id}'),
-          ),
-          title: Text(
-            post.title,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-          ),
+          leading: CircleAvatar(child: Text('${post.id}')),
+          title: Text(post.title, maxLines: 2, overflow: TextOverflow.ellipsis),
           subtitle: Text(
             post.body,
             maxLines: 2,

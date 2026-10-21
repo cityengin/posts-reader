@@ -88,8 +88,8 @@ void main() {
     'PostListView: bấm một dòng thì mở màn chi tiết và hiện body của bài viết đó',
     (tester) async {
       service.onFetchPosts = () async => samplePosts;
-      service.onFetchPostById =
-          (id) async => samplePosts.firstWhere((p) => p.id == id);
+      service.onFetchPostById = (id) async =>
+          samplePosts.firstWhere((p) => p.id == id);
 
       await tester.pumpWidget(createWidgetUnderTest());
       await tester.pumpAndSettle();

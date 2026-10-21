@@ -32,8 +32,8 @@ void main() {
   testWidgets(
     'PostDetailView: service ném ApiException.notFound() thì hiện message "Không tìm thấy bài viết." và KHÔNG tìm thấy nút "Thử lại"',
     (tester) async {
-      service.onFetchPostById =
-          (_) async => throw const ApiException.notFound();
+      service.onFetchPostById = (_) async =>
+          throw const ApiException.notFound();
 
       await tester.pumpWidget(createWidgetUnderTest(999));
       await tester.pumpAndSettle();
