@@ -141,7 +141,7 @@ Kết quả hiện tại: `flutter analyze` không có lỗi, `flutter test` pas
 |---|---|---|
 | `models/`, `services/`, `viewmodels/` và test tương ứng | Thắng | Business Logic, State Management, API |
 | `views/`, `main.dart` (nối ViewModel), widget test | Thái | UI Design |
-| Báo cáo / Slide | Cả hai | |
+| Báo cáo / Slide | Thắng | |
 
 ## Dữ liệu và giấy phép
 
