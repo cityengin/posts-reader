@@ -143,7 +143,6 @@ Kết quả hiện tại: `flutter analyze` không có lỗi, `flutter test` pas
 | `views/`, `main.dart` (nối ViewModel), widget test | Thái | UI Design |
 | Báo cáo / Slide | Thắng | |
 
-## Dữ liệu và giấy phép
+## Dữ liệu
 
 - Nguồn dữ liệu: https://jsonplaceholder.typicode.com, một REST API giả miễn phí dùng để thử nghiệm. Ứng dụng chỉ đọc dữ liệu (GET), nội dung bài viết là lorem ipsum, không phải nội dung thật.
-- Repo chưa có file `LICENSE`.
