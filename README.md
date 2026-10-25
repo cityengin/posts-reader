@@ -57,6 +57,10 @@ test/
 
 ### Ba trạng thái hiển thị
 
+| Màn lúc tải | Màn danh sách | Màn chi tiết bài viết | Màn lỗi kèm nút Thử lại |
+|:---:|:---:|:---:|:---:|
+| <img src="images/man_dang_tai.png" width="200" alt="Màn lúc tải" /> | <img src="images/man_danh_sach.png" width="200" alt="Màn danh sách" /> | <img src="images/man_chi_tiet.png" width="200" alt="Màn chi tiết bài viết" /> | <img src="images/man_loi.png" width="200" alt="Màn lỗi kèm nút Thử lại" /> |
+
 | `LoadStatus` | View hiển thị |
 |---|---|
 | `loading` | `CircularProgressIndicator` ở giữa màn hình |
